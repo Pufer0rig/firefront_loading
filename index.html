@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FireFront Loading</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay">
+        <header>
+            <h1>FireFront</h1>
+        </header>
+        <main>
+            <section class="welcome">
+                <h2>Вітаю!</h2>
+                <p>
+                    Ти став до лав збройних сил Велдавії! Ти дуже допоможеш стати нашою частиною до перемоги над Цимерією.
+                    Вступи у відділення та дай волю своїм навичкам у військовому ділі, знайди себе серед багатьох.
+                </p>
+            </section>
+            <section class="player">
+                <h3>Твоя активність!</h3>
+                <canvas id="activityChart"></canvas>
+            </section>
+            <section class="staff">
+                <h3>Управління серверу</h3>
+                <div id="staffList"></div>
+            </section>
+            <section class="progress-bar">
+                <div class="bar" id="progress"></div>
+                <span id="progress-text">0%</span>
+            </section>
+            <section class="tips" id="tips">
+                <ul id="tipsList">
+                    <li>Завантаження...</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

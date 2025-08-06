@@ -1,0 +1,78 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    height: 100%;
+    overflow: hidden;
+}
+.background {
+    background-image: url('materials/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+header h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #00ff88;
+    text-shadow: 2px 2px #003300;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+}
+section {
+    background: #002200;
+    padding: 1em;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #00ff88;
+}
+.progress-bar {
+    grid-column: 1 / -1;
+    position: relative;
+    height: 30px;
+    background: #111;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.progress-bar .bar {
+    background: #00ff88;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+.progress-bar span {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    font-weight: bold;
+}
+#staffList img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.staff-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.staff-entry span {
+    color: #00ff88;
+}
